@@ -7,7 +7,8 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.window.onDidChangeTextEditorSelection(selection=> {
 			if (selection.kind != TextEditorSelectionChangeKind.Mouse || selection.selections.length == 0) return;
 			if (selection.selections.find(a=>a.isEmpty) == null) return;
-			vscode.commands.executeCommand("workbench.files.action.focusFilesExplorer");
+			//vscode.commands.executeCommand("workbench.files.action.focusFilesExplorer");
+			vscode.commands.executeCommand("workbench.extensions.action.showInstalledExtensions");
 			vscode.commands.executeCommand("workbench.action.toggleSidebarVisibility");
 		});
 	}
