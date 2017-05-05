@@ -2,7 +2,7 @@
     "name": "vscode-vtools",
     "displayName": "VTools",
     "description": "A collection of small tools for Visual Studio Code.",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "publisher": "venryx",
 	"repository": "https://github.com/Venryx/vscode-vtools",
 	"icon": "Images/Icons/Logo_128.png",
@@ -25,6 +25,11 @@
 					"type": "boolean",
 					"default": false,
 					"description": "Causes the side-bar to be hidden whenever the user clicks outside of it."
+				},
+				"vtools.autoHideDelay": {
+					"type": "number",
+					"default": 300,
+					"description": "How long to wait (after the user clicks outside of the side-bar) before hiding the side-bar. (helps solve the unintended-selection issue -- especially when scrolled to the right)"
 				}
 			}
 		}

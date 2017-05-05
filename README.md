@@ -9,4 +9,5 @@ Causes the side-bar to be hidden whenever the user clicks outside of it. (techni
 
 ## Settings
 
-* `vtools.autoHideSideBar`: enables/disables this feature (boolean, default: `false`)
+* `vtools.autoHideSideBar`: Causes the side-bar to be hidden whenever the user clicks outside of it. [boolean, default: `false`]
+* `vtools.autoHideDelay`: How long to wait (after the user clicks outside of the side-bar) before hiding the side-bar. (helps solve the unintended-selection issue -- especially when scrolled to the right) [number, default: `300`]
