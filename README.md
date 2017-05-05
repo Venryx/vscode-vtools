@@ -1,5 +1,7 @@
 # VTools for Visual Studio Code
 
+Extension install page: <https://marketplace.visualstudio.com/items?itemName=venryx.vscode-vtools>
+
 ## Features
 
 ### Auto-hide side-bar
