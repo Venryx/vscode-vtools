@@ -1,7 +1,10 @@
 # Change Log
 
+### 1.0.3
+* Added autoHideBottomBar option. (thanks @jBrizzle!)
+
 ### 1.0.2
-* Added "auto-hide delay" option -- which mostly solves the unintended-selection issue. (thanks @pdf!)
+* Added autoHideDelay option -- which mostly solves the unintended-selection issue. (thanks @pdf!)
 
 ### 1.0.0
 * Initial release.
