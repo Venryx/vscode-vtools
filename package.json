@@ -2,7 +2,7 @@
     "name": "vscode-vtools",
     "displayName": "VTools",
     "description": "A collection of small tools for Visual Studio Code.",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "publisher": "venryx",
 	"repository": "https://github.com/Venryx/vscode-vtools",
 	"icon": "Images/Icons/Logo_128.png",
