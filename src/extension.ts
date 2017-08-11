@@ -21,7 +21,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 					if (config.autoHideSideBar) {
                         //vscode.commands.executeCommand("workbench.files.action.focusFilesExplorer");
-						vscode.commands.executeCommand("workbench.extensions.action.showInstalledExtensions");
+						vscode.commands.executeCommand("workbench.view.search");
 						vscode.commands.executeCommand("workbench.action.toggleSidebarVisibility");
                     }
                     if( ( config.autoHideBottomBar                                                 )
