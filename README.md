@@ -22,7 +22,7 @@ Same thing as above, except for the bottom-bar (output, terminal, etc.).
 
 1) Clone/download repo: https://github.com/Venryx/vscode-vtools.git
 2) Make code changes in "src" folder.
-3) Run "npm run compile". (this will start compiler in watch mode) [if editing in vscode, Ctrl+B also works]
+3) Run "npm run compile". (this will start compiler in watch mode) [if editing in vscode, Ctrl+Shift+B also works]
 4) Not sure what command to use in the command-line. In vscode, I open the Debug panel and launch the extension from there.
 
 ## Publishing

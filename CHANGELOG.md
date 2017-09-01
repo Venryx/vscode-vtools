@@ -1,5 +1,9 @@
 # Change Log
 
+### 1.0.4
+* Fixed that the output and debug console windows could close when selecting text inside them.
+* Fixed that a "Cannot read property 'getViews' of undefined" error would sometimes occur. (VS Code 1.15)
+
 ### 1.0.3
 * Added autoHideBottomBar option. (thanks @jBrizzle!)
 
