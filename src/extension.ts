@@ -20,8 +20,6 @@ export function activate(context: vscode.ExtensionContext) {
 					if (lastSelectionTime != thisSelectionTime) return;
 
 					if (config.autoHideSideBar) {
-						//vscode.commands.executeCommand("workbench.files.action.focusFilesExplorer");
-						//vscode.commands.executeCommand("workbench.extensions.action.showInstalledExtensions");
 						vscode.commands.executeCommand("workbench.view.search");
 						vscode.commands.executeCommand("workbench.action.toggleSidebarVisibility");
 					}
@@ -30,7 +28,7 @@ export function activate(context: vscode.ExtensionContext) {
 					let pathIsFile = path.includes(".") || path.includes("\\") || path.includes("/");
 					if (config.autoHideBottomBar && pathIsFile) {
 						vscode.commands.executeCommand("workbench.action.terminal.focus");
- 						vscode.commands.executeCommand("workbench.action.terminal.toggleTerminal");
+						vscode.commands.executeCommand("workbench.action.togglePanel");
 					}
 				}, vscode.workspace.getConfiguration("vtools").autoHideDelay);
 			}
