@@ -24,14 +24,16 @@ export function activate(context: vscode.ExtensionContext) {
 						//vscode.commands.executeCommand("workbench.files.action.focusFilesExplorer");
 						//vscode.commands.executeCommand("workbench.extensions.action.showInstalledExtensions");
 						
-						vscode.commands.executeCommand("workbench.view.search");
+						//vscode.commands.executeCommand("workbench.view.search");
+						vscode.commands.executeCommand("workbench.action.focusSideBar");
 						vscode.commands.executeCommand("workbench.action.toggleSidebarVisibility");
 					}
 
 					let path = vscode.window.activeTextEditor.document.fileName;
 					let pathIsFile = path.includes(".") || path.includes("\\") || path.includes("/");
 					if (config.autoHideBottomBar && pathIsFile) {
-						vscode.commands.executeCommand("workbench.action.terminal.focus");
+						//vscode.commands.executeCommand("workbench.action.terminal.focus");
+						vscode.commands.executeCommand("workbench.action.focusPanel");
 						vscode.commands.executeCommand("workbench.action.togglePanel");
 					}
 				}, vscode.workspace.getConfiguration("vtools").autoHideDelay);

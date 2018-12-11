@@ -1,5 +1,8 @@
 # Change Log
 
+### 1.0.6
+* The auto-hiding side/bottom bar features now preserve which panel was open. (makes it not conflict with manual execution of toggleSidebarVisibility and togglePanel commands)
+
 ### 1.0.5
 * Added terminal-always-focusing fix for vscode 1.28. (by jBrizzle)
 
