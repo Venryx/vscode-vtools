@@ -16,7 +16,7 @@ Same thing as above, except for the bottom-bar (output, terminal, etc.).
 
 * `vtools.autoHideSideBar`: Causes the side-bar to be hidden whenever the user clicks outside of it. [boolean, default: `false`]
 * `vtools.autoHideBottomBar`: Causes the bottom-bar (output, terminal, etc.) to be hidden whenever the user clicks outside of it. [boolean, default: `false`]
-* `vtools.autoHideDelay`: After clicking outside the side/bottom bar, how many milliseconds to wait before hiding it. (helps solve the unintended-selection issue -- especially when scrolled to the right) [number, default: `300`]
+* `vtools.autoHideDelay`: How many milliseconds to wait before hiding the side/bottom bars, after clicking outside of them. (helps solve the unintended-selection issue -- especially when scrolled to the right) [number, default: `300`]
 
 ## Developing
 
