@@ -20,21 +20,17 @@ export function activate(context: vscode.ExtensionContext) {
 					if (lastSelectionTime != thisSelectionTime) return;
 
 					if (config.autoHideSideBar) {
-						// alternate "show sidebar" commands
-						//vscode.commands.executeCommand("workbench.files.action.focusFilesExplorer");
-						//vscode.commands.executeCommand("workbench.extensions.action.showInstalledExtensions");
-						
-						//vscode.commands.executeCommand("workbench.view.search");
-						vscode.commands.executeCommand("workbench.action.focusSideBar");
-						vscode.commands.executeCommand("workbench.action.toggleSidebarVisibility");
+						/*vscode.commands.executeCommand("workbench.action.focusSideBar");
+						vscode.commands.executeCommand("workbench.action.toggleSidebarVisibility");*/
+						vscode.commands.executeCommand("workbench.action.closeSidebar");
 					}
 
 					let path = vscode.window.activeTextEditor.document.fileName;
 					let pathIsFile = path.includes(".") || path.includes("\\") || path.includes("/");
 					if (config.autoHideBottomBar && pathIsFile) {
-						//vscode.commands.executeCommand("workbench.action.terminal.focus");
-						vscode.commands.executeCommand("workbench.action.focusPanel");
-						vscode.commands.executeCommand("workbench.action.togglePanel");
+						/*vscode.commands.executeCommand("workbench.action.focusPanel");
+						vscode.commands.executeCommand("workbench.action.togglePanel");*/
+						vscode.commands.executeCommand("workbench.action.closePanel");
 					}
 				}, vscode.workspace.getConfiguration("vtools").autoHideDelay);
 			}
@@ -42,5 +38,4 @@ export function activate(context: vscode.ExtensionContext) {
 		});
 	}
 }
-export function deactivate() {
-}
+export function deactivate() {}
