@@ -1,5 +1,8 @@
 # Change Log
 
+### 1.0.7
+* Updated extension's sidebar/bottom-bar hiding code, to use the new "closeSidebar" and "closePanel" commands (rather than the focus-then-toggle approach).
+
 ### 1.0.6
 * The auto-hiding side/bottom bar features now preserve which panel was open. (makes it not conflict with manual execution of toggleSidebarVisibility and togglePanel commands)
 

@@ -29,4 +29,6 @@ Same thing as above, except for the bottom-bar (output, terminal, etc.).
 
 1) Increment the version number in package.json.
 2) Add an entry to the changelog for the new version.
-3) Run "npm publish". (this will publish to npm, and run "vsce publish" to update the live vscode extension)
+3) Run "npm publish". (this publishes to npm, and runs "vsce publish", which adds the new version to the vscode marketplace)
+
+Note: If "vsce" doesn't exist, run "npm i -g vsce". If login not-set/invalid (or PAT expired), run "vsce login [your publisher name]", and supply a non-expired PAT.
