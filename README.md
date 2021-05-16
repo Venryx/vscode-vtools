@@ -18,6 +18,14 @@ Same thing as above, except for the bottom-bar (output, terminal, etc.).
 * `vtools.autoHideBottomBar`: Causes the bottom-bar (output, terminal, etc.) to be hidden whenever the user clicks outside of it. [boolean, default: `false`]
 * `vtools.autoHideDelay`: How many milliseconds to wait before hiding the side/bottom bars, after clicking outside of them. (helps solve the unintended-selection issue -- especially when scrolled to the right) [number, default: `300`]
 
+## Alternatives
+
+The open-source ecosystem works best when software alternatives are easy to find.
+
+The below are plugins providing functionalities similar to...
+* **Auto-hide side-bar:** [Auto Hide](https://github.com/sirmspencer/vscode-autohide)
+* **Auto-hide bottom-bar:** [Auto Hide](https://github.com/sirmspencer/vscode-autohide)
+
 ## Developing
 
 1) Clone/download repo: https://github.com/Venryx/vscode-vtools.git
